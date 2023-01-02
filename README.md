@@ -7,3 +7,5 @@ In addition, in this repository, I am creating a corresponding Notebook for use 
 
 Work in progress. 
 
+## DataSets
+These notebooks are based on the dataset in OpenML at https://www.openml.org/d/40945 - This data set contains the survival status, age, gender, and class (which serves as a proxy for economic status) of passengers aboard the maiden voyage of the RMS Titanic in 1912. this dataset is not included here. You need to download this dataset yourself.
