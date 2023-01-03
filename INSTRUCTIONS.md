@@ -1,4 +1,4 @@
-#Instructions for using the Titanic Survivors Jupyter Notebook
+# Instructions for using the Titanic Survivors Jupyter Notebook
 
 This repository contains two sets of artifacts, dependent upon whether you want to use an Amazon SageMaker (Or SageMaker Studio) Notebook instance, 
 or whether you would prefer to use the Free Amazon SageMaker Studio Lab.
@@ -13,25 +13,25 @@ This document consists of the following sections:
 - Demo Notes: using Amazon SageMaker or SageMaker Studio - this requires a full AWS account and Jupyter notebook instance.
 - Demo Notes: using Amazon SageMaker Studio Lab - this just requires a free Amazon SageMaker Studio Lab account. You do not need an AWS account.
 
-##Background Scenario
+## Background Scenario
 
 
-##Demo Notes: using Amazon SageMaker or SageMaker Studio
+## Demo Notes: using Amazon SageMaker or SageMaker Studio
 
-###Setup
+### Setup
 
-###Demo
-
-
-###Cleanup
+### Demo
 
 
-##Demo Notes: using Amazon SageMaker Studio Lab
+### Cleanup
 
 
-###Setup
-
-###Demo
+## Demo Notes: using Amazon SageMaker Studio Lab
 
 
-###Cleanup
+### Setup
+
+### Demo
+
+
+### Cleanup
