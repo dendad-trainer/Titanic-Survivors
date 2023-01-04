@@ -30,7 +30,17 @@ I hope you will enjoy using this resource to teach basic Machine Learning concep
 
 ### Setup
 
-How to set up
+You need to have an Amazon AWS Account, with an IAM user with the necessary IAM permissions to read & write to your S3 bucket, to call Amazon SageMaker APIs and Amazon SageMaker Runtime APIs. All data will be stored on S3. If you are just launching an Amazon SageMaker Notebook Instance, you can choose the interface as either Jupyter or Jupyter Lab.
+
+Create an S3 bucket to store the artifacts. Create a folder 'Titanic', and upload the 'titanic.csv' file from the OpenML link (above), into this folder.
+
+Launch an Amazon SageMaker Notebook instance. A 'T3.Micro' instance type should suffice. Give this instance an IAM Role which will enable it to make API calls to 'sagemaker' and to 'sagemaker-runtime',  and to access the S3 bucket. 
+
+When the Amazon SageMaker Notebook instance is running, click on 'Open Jupyter'. This will bring up the Jupyter page showing the instance file system.
+
+Upload the file named Titanic-Survivors.ipynb from this GitHub repository.
+
+Double-click on Titanic-Survivors.ipynb to launch it. 
 
 ### Demo
 
@@ -44,7 +54,7 @@ Things to clean up afterwards.
 
 ### Setup
 
-You need to have a free account in Amazon SageMaker Studio Lab.
+You need to have a free account in Amazon SageMaker Studio Lab.  There are no permissions / IAM restrictions. All data is stored on the hard drive of the Jupyter Notebook instance itself. The interface is Jupyter Lab.
 
 Launch a 'Project'. This can be type 'CPU', not 'GPU'. 
 
@@ -52,7 +62,7 @@ This will start up Jupyter Lab.
 
 Clone the git repository. This should create a folder called 'Titanic-Survivors', with the folders 'data' and 'model', and following files at the top level: titanic-environment.yml, Titanic-Survivors-SMSL.ipynb, Titanic-Survivors.ipynb. You can delete the last file, since it only applies to the full SageMaker service.
 
-Upload the 'titanic.csv' file from the Kaggle link (above), into the 'data' folder.
+Upload the 'titanic.csv' file from the OpenML link (above), into the 'data' folder.
 
 In Jupyter Lab, Right click on titanic-environment.yml and "Create Conda Environment". This will start a terminal session and install the necessary requirements, including sklearn, pandas, numpy.
 
