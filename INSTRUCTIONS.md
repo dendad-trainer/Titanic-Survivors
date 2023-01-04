@@ -9,11 +9,11 @@ the notebook for SageMaker Studio Lab makes use of SKLearn APIs rather than AWS 
 
 This document consists of the following sections:
 
-* [Background Scenario](#background-scenario) - sets the background and tells the story which you will demonstrate. This applies whichever of the two demo approaches you wish to use.
-* [Demo Notes: using Amazon SageMaker or SageMaker Studio](#demo-notes-using-amazon-sagemaker-or-sagemaker-studio) - this requires a full AWS account and Jupyter notebook instance. This makes full use of AWS Managed Services, and would be chargeable. This would be more relevant for commercial customers of AWS.
-* [Demo Notes: using Amazon SageMaker Studio Lab](#demo-notes-using-amazon-sagemaker-studio-lab) - this just requires a free Amazon SageMaker Studio Lab account. You do not need an AWS account. The Amazon SageMaker Studio Lab service is entirely free, although it does have some technical limitations compared with the full SageMaker, above. This would be more relevant to people interested in Machine Learnging from an academic or hobby perspective.
+1. [Background Scenario](#background-scenario) - sets the background and tells the story which you will demonstrate. This applies whichever of the two demo approaches you wish to use.
+2. [Demo Notes: using Amazon SageMaker or SageMaker Studio](#demo-notes-using-amazon-sagemaker-or-sagemaker-studio) - this requires a full AWS account and Jupyter notebook instance. This makes full use of AWS Managed Services, and would be chargeable. This would be more relevant for commercial customers of AWS.
+3. [Demo Notes: using Amazon SageMaker Studio Lab](#demo-notes-using-amazon-sagemaker-studio-lab) - this just requires a free Amazon SageMaker Studio Lab account. You do not need an AWS account. The Amazon SageMaker Studio Lab service is entirely free, although it does have some technical limitations compared with the full SageMaker, above. This would be more relevant to people interested in Machine Learnging from an academic or hobby perspective.
 
-## Background Scenario
+## 1.0 Background Scenario
 
 These notebooks are based on the dataset in OpenML at https://www.openml.org/d/40945 - This data set contains the survival status, age, gender, and class (which serves as a proxy for economic status) of passengers aboard the maiden voyage of the RMS Titanic in 1912. this dataset is not included here. You need to download this dataset yourself.
 
@@ -26,9 +26,9 @@ The reason for choosing this dataset is as follows:
 
 I hope you will enjoy using this resource to teach basic Machine Learning concepts to your students.
 
-## Demo Notes: using Amazon SageMaker or SageMaker Studio
+## 2.0 Demo Notes: using Amazon SageMaker or SageMaker Studio
 
-### Setup
+### 2.1 Setup
 
 You need to have an Amazon AWS Account, with an IAM user with the necessary IAM permissions to read & write to your S3 bucket, to call Amazon SageMaker APIs and Amazon SageMaker Runtime APIs. All data will be stored on S3. If you are just launching an Amazon SageMaker Notebook Instance, you can choose the interface as either Jupyter or Jupyter Lab.
 
@@ -42,17 +42,17 @@ Upload the file named Titanic-Survivors.ipynb from this GitHub repository.
 
 Double-click on Titanic-Survivors.ipynb to launch it. 
 
-### Demo
+### 2.2 Demo
 
 How to do the demo.
 
-### Cleanup
+### 2.3 Cleanup
 
 Things to clean up afterwards.
 
-## Demo Notes: using Amazon SageMaker Studio Lab
+## 3.0 Demo Notes: using Amazon SageMaker Studio Lab
 
-### Setup
+### 3.1 Setup
 
 You need to have a free account in Amazon SageMaker Studio Lab.  There are no permissions / IAM restrictions. All data is stored on the hard drive of the Jupyter Notebook instance itself. The interface is Jupyter Lab.
 
@@ -70,11 +70,11 @@ Double-click on Titanic-Survivors-SMSL.ipynb to launch it.
 
 You will be asked to Select the Kernel. Choose the kernel called. Titanic-env:Python which was created using the yml file above.
 
-### Demo
+### 3.2 Demo
 
 How to do the demo.
 
-### Cleanup
+### 3.3 Cleanup
 
 Stop the Kernel.
 
