@@ -42,10 +42,23 @@ Things to clean up afterwards.
 
 ## Demo Notes: using Amazon SageMaker Studio Lab
 
-
 ### Setup
 
-How to set up
+You need to have a free account in Amazon SageMaker Studio Lab.
+
+Launch a 'Project'. This can be type 'CPU', not 'GPU'. 
+
+This will start up Jupyter Lab.
+
+Clone the git repository. This should create a folder called 'Titanic-Survivors', with the folders 'data' and 'model', and following files at the top level: titanic-environment.yml, Titanic-Survivors-SMSL.ipynb, Titanic-Survivors.ipynb. You can delete the last file, since it only applies to the full SageMaker service.
+
+Upload the 'titanic.csv' file from the Kaggle link (above), into the 'data' folder.
+
+In Jupyter Lab, Right click on titanic-environment.yml and "Create Conda Environment". This will start a terminal session and install the necessary requirements, including sklearn, pandas, numpy.
+
+Double-click on Titanic-Survivors-SMSL.ipynb to launch it. 
+
+You will be asked to Select the Kernel. Choose the kernel called. Titanic-env:Python which was created using the yml file above.
 
 ### Demo
 
@@ -53,4 +66,8 @@ How to do the demo.
 
 ### Cleanup
 
-Things to clean up afterwards.
+Stop the Kernel.
+
+Delete the conda environment by launching a terminal, and entering `conda env remove -n Titanic-env`
+
+Delete all data from the hard drive from the 'Titanic-Survivors' folder downwards.
