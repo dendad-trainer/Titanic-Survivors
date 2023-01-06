@@ -1,11 +1,13 @@
 # Titanic-Survivors
 Demonstration Jupyter Notebooks for use in SageMaker Notebook / SageMaker Studio, and SageMaker Studio Lab
 
-This repository contains the original "Titanic Survivors" Notebook, which was created when I was working as a Senior Technical Trainer at AWS. The Notebook was designed to be used in a SageMaker Notebook instance. It could also be used as a Notebook in SageMaker Studio.
+This repository contains the original "Titanic Survivors" Notebook, which was created when I was working as a Senior Technical Trainer at AWS. 
 
-In addition, in this repository, I am creating a corresponding Notebook for use in SageMaker Studio Lab, which is the free Service. However, SageMaker Studio Lab does not allow direct access to the AWS SageMaker APIs. So in this revised notebook, the actual Training is done using SKLearn, rather than using AWS API calls. 
+The notebook trains a Machine Learning model on real data from the sinking of the Titanic in 1912. The trained model can then be used to predict the likelihood of people suriviving the sinking, based on their age, sex, numbers of siblings etc. 
 
-NOTE: this is Work in progress. Bear with me.
+The original Notebook was designed to be run on an **Amazon SageMaker** Notebook instance. It could also be used as a Notebook in **Amazon SageMaker Studio**.
+
+In addition, in this repository, I have created a corresponding Notebook for use in **Amazon SageMaker Studio Lab**, which is a free Service for people interested in understanding Machine Learning. However, SageMaker Studio Lab does not allow direct access to the AWS SageMaker APIs. So in this revised notebook, the actual Training is done using SKLearn, rather than using AWS API calls. 
 
 ## DataSets
 These notebooks are based on the dataset in OpenML at [https://www.openml.org/d/40945](https://www.openml.org/d/40945) - This data set contains the survival status, age, gender, and class (which serves as a proxy for economic status) of passengers aboard the maiden voyage of the RMS Titanic in 1912. this dataset is not included here. You need to download this dataset yourself.
