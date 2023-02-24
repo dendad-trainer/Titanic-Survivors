@@ -1,4 +1,4 @@
-# Instructions for using the Titanic Survivors Jupyter Notebook
+# Instructions for using the Titanic Survivors Jupyter Notebooks
 
 This repository contains two sets of artifacts, dependent upon whether you want to use an Amazon SageMaker (Or Amazon SageMaker Studio) Notebook instance, 
 or whether you would prefer to use the Free Amazon SageMaker Studio Lab.
@@ -9,9 +9,9 @@ So in the spirit of 'keep it free', the notebook for SageMaker Studio Lab makes 
 
 This document consists of the following sections:
 
-1. [Background Scenario](#background-scenario) - sets the background and tells the story which you will demonstrate. This applies whichever of the two demo approaches you wish to use.
-2. [Demo Notes: using Amazon SageMaker or SageMaker Studio](#demo-notes-using-amazon-sagemaker-or-sagemaker-studio) - this requires a full AWS account and Jupyter notebook instance. This makes full use of AWS Managed Services, and would be chargeable. This would be more relevant for commercial customers of AWS.
-3. [Demo Notes: using Amazon SageMaker Studio Lab](#demo-notes-using-amazon-sagemaker-studio-lab) - this just requires a free Amazon SageMaker Studio Lab account. You do not need an AWS account. The Amazon SageMaker Studio Lab service is entirely free, although it does have some technical limitations compared with the full SageMaker, above. This would be more relevant to people interested in Machine Learnging from an academic or hobby perspective.
+1. [Background Scenario](#1.0-background-scenario) - sets the background and tells the story which you will demonstrate. This applies whichever of the two demo approaches you wish to use.
+2. [Demo Notes: using Amazon SageMaker or SageMaker Studio](#2.0-demo-notes-using-amazon-sagemaker-or-sagemaker-studio) - this requires a full AWS account and Jupyter notebook instance. This makes full use of AWS Managed Services, and would be chargeable. This would be more relevant for commercial customers of AWS.
+3. [Demo Notes: using Amazon SageMaker Studio Lab](#3.0-demo-notes-using-amazon-sagemaker-studio-lab) - this just requires a free Amazon SageMaker Studio Lab account. You do not need an AWS account. The Amazon SageMaker Studio Lab service is entirely free, although it does have some technical limitations compared with the full SageMaker, above. This would be more relevant to people interested in Machine Learnging from an academic or hobby perspective.
 
 ## 1.0 Background Scenario
 
@@ -46,7 +46,7 @@ The Notebook combines python code and extensive comments and markdown cells, so 
 
 You need to have an Amazon AWS Account, with an IAM user with the necessary IAM permissions to read & write to your S3 bucket, to call Amazon SageMaker APIs and Amazon SageMaker Runtime APIs. All data will be stored on S3. If you are just launching an Amazon SageMaker Notebook Instance, you can choose the interface as either Jupyter or Jupyter Lab.
 
-Create an S3 bucket to store the artifacts. Create a folder 'Titanic', and upload the 'titanic.csv' file from the OpenML link (above), into this folder.
+Create an S3 bucket to store the artifacts. Create a folder 'Titanic', and upload the 'titanic.csv' file from the OpenML link (above), or the copy I have taken in this repository, into this folder.
 
 Launch an Amazon SageMaker Notebook instance. A 'T3.Micro' instance type should suffice. Give this instance an IAM Role which will enable it to make API calls to 'sagemaker' and to 'sagemaker-runtime',  and to access the S3 bucket. 
 
@@ -80,10 +80,9 @@ You need to have a free account in Amazon SageMaker Studio Lab.  There are no pe
 Launch a 'Project'. This can be type 'CPU', not 'GPU'. 
 
 This will start up Jupyter Lab.
+Click on the "GIT" icon <img width="33" alt="Screenshot 2023-02-24 at 09 31 49" src="https://user-images.githubusercontent.com/121753610/221143412-5b116e00-93d0-4b4c-8249-64dc2bb528de.png"> and enter https://github.com/dendad-trainer/Titanic-Survivors to Clone the git repository. This should create a folder called 'Titanic-Survivors', with the folders 'data' and 'model', and following files at the top level: titanic-environment.yml, Titanic-Survivors-SMSL.ipynb, Titanic-Survivors.ipynb. You can delete the last file, since it only applies to the full SageMaker service.
 
-Clone the git repository. This should create a folder called 'Titanic-Survivors', with the folders 'data' and 'model', and following files at the top level: titanic-environment.yml, Titanic-Survivors-SMSL.ipynb, Titanic-Survivors.ipynb. You can delete the last file, since it only applies to the full SageMaker service.
-
-Upload the 'titanic.csv' file from the OpenML link (above), into the 'data' folder.
+Copy the 'titanic.csv' file into the 'data' folder.
 
 In Jupyter Lab, Right click on titanic-environment.yml and "Create Conda Environment". This will start a terminal session and install the necessary requirements, including sklearn, pandas, numpy.
 
