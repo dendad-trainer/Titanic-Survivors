@@ -10,7 +10,9 @@ The original Notebook was designed to be run on an **Amazon SageMaker** Notebook
 In addition, in this repository, I have created a corresponding Notebook for use in **Amazon SageMaker Studio Lab**, which is a free Service for people interested in understanding Machine Learning. However, SageMaker Studio Lab does not allow direct access to the AWS SageMaker APIs. So in this revised notebook, the actual Training is done using SKLearn, rather than using AWS API calls. 
 
 ## DataSets
-These notebooks are based on the dataset in OpenML at [https://www.openml.org/d/40945](https://www.openml.org/d/40945) - This data set contains the survival status, age, gender, and class (which serves as a proxy for economic status) of passengers aboard the maiden voyage of the RMS Titanic in 1912. this dataset is not included here. You need to download this dataset yourself.
+These notebooks are based on the dataset in OpenML at [https://www.openml.org/d/40945](https://www.openml.org/d/40945) - This data set contains the survival status, age, gender, and class (which serves as a proxy for economic status) of passengers aboard the maiden voyage of the RMS Titanic in 1912. 
+
+Unfortunately, I have found practical issues with trying to download this dataset from OpenML. So for ease of use, I have included a copy of the dataset here, in CSV format. Full acknowledgement is given here.
 
 ## List of artifacts
 | File | Purpose |
@@ -25,6 +27,7 @@ These notebooks are based on the dataset in OpenML at [https://www.openml.org/d/
 | Titanic-Survivors-SMSL.ipynb | Jupyter Notebook for using in Amazon SageMaker Studio Lab only. The dataset should be loaded onto the hard drive of the SageMaker Studio Lab Jupyter Lab |
 | Titanic-Survivors.ipynb | Jupyter Notebook for using in Amazon SageMaker (full version) only. The dataset should loaded onto an S3 bucket referenced in this notebook. |
 | titanic-environment.yml | Conda Environment creation file. Used in Amazon SageMaker Studio Lab only. |
+| titanic.csv | Original Titanic dataset copied from OpenML |
 | titanic.xlsx | Excel Version of the OpenML dataset, with conditional formatting to help students understand the technical issues in data wrangling |
 
 ## How to Use
